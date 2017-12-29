@@ -1,0 +1,31 @@
+{
+  "name": "ngx-mm-scroll",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcinMichalik/ngx-mm-scroll"
+  },
+  "author": {
+    "name": "MarcinMichalik",
+    "email": "marcinmat16@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcinMichalik/ngx-mm-scroll/issues"
+  },
+  "main": "ngx-mm-scroll.umd.js",
+  "module": "ngx-mm-scroll.js",
+  "jsnext:main": "ngx-mm-scroll.js",
+  "typings": "ngx-mm-scroll.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.0"
+  }
+}
