@@ -6,17 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { NgxMMScroll } from 'ngx-mm-scroll';
+import { HomeComponent } from './home/home.component';
+import {ModalModule} from 'ngx-bootstrap/modal';
+import {ClipboardModule} from 'ngx-clipboard/dist';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemoComponent
+    DemoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxMMScroll.forRoot()
+    NgxMMScroll.forRoot(),
+    ModalModule.forRoot(),
+    ClipboardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,3 +5,27 @@
 
 $fa-font-path: '../node_modules/font-awesome/fonts/';
 @import "~font-awesome/scss/font-awesome";
+
+
+@import "~cryptocoins-icons/webfont/cryptocoins.css";
+@import "~cryptocoins-icons/webfont/cryptocoins-colors.css";
+
+.media{
+  i.fa{
+    font-size: 5rem;
+  }
+}
+
+.future-wrapper{
+  padding: 80px 15%;
+}
+
+.cc {
+  font-size: 3.2rem;
+}
+
+.media-body.hidden-text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
