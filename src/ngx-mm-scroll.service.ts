@@ -18,7 +18,9 @@ export class NgxMMScrollService {
                 const el = this.getElement(element);
                 if (el) {
                     const viewportOffset = el.getBoundingClientRect();
-                    this.scroll(viewportOffset.top + window.pageYOffset, viewportOffset.left + window.pageXOffset, scrollable, behavior)
+                    const top = (scrollable instanceof Window) ? (viewportOffset.top + window.pageYOffset) : el.offsetTop;
+                    const left = (scrollable instanceof Window) ? (viewportOffset.left + window.pageXOffset) : el.offsetLeft;
+                    this.scroll(top, left, scrollable, behavior)
                         .then(result => {
                         resolve(result);
                     }).catch(error => {
@@ -64,7 +66,9 @@ export class NgxMMScrollService {
                 const el = this.getElement(element);
                 if (el) {
                     const viewportOffset = el.getBoundingClientRect();
-                    this.scrollTo(viewportOffset.top + window.pageYOffset, viewportOffset.left + window.pageXOffset, scrollable, behavior)
+                    const top = (scrollable instanceof Window) ? (viewportOffset.top + window.pageYOffset) : el.offsetTop;
+                    const left = (scrollable instanceof Window) ? (viewportOffset.left + window.pageXOffset) : el.offsetLeft;
+                    this.scrollTo(top, left, scrollable, behavior)
                         .then(result => {
                         resolve(result);
                     }).catch(error => {

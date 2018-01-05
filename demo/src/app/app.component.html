@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" [routerLink]="['']">
     <!--<img src="assets/images/ngx-mm-logo-red.png" class="d-inline-block align-content-center" height="80">-->
     <!--<img src="assets/images/mm-logo-black.png" class="d-inline-block align-content-center" height="30">-->
     <img src="assets/images/mm-logo-white.png" class="d-inline-block align-content-center" height="30">
@@ -12,10 +12,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" [routerLink]="['']">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Examples</a>
+        <a class="nav-link" [routerLink]="['demo']">Examples</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Documentation</a>

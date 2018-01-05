@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import {ClipboardModule} from 'ngx-clipboard/dist';
 import {FormsModule} from '@angular/forms';
+import {HighlightJsModule} from 'angular2-highlight-js';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {FormsModule} from '@angular/forms';
     NgxMMScroll.forRoot(),
     ModalModule.forRoot(),
     ClipboardModule,
-    FormsModule
+    FormsModule,
+    HighlightJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

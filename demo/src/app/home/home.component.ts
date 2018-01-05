@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   currentAddress: string;
   currentIcon: string;
   showThanks = false;
-  showMiner = false;
 
   constructor() { }
 
